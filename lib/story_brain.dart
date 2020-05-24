@@ -55,26 +55,26 @@ class StoryBrain {
       } else {
         _storynumber = 3;
       }
+    } else {
+      restart();
     }
-    else
-      {
-        restart();
-      }
   }
 
   String getStory() {
-    return _storyData.first.storyTitle;
+    return _storyData[_storynumber].storyTitle;
   }
 
   String getChoice1() {
-    return _storyData.first.choice1;
+    return _storyData[_storynumber].choice1;
   }
 
   String getChoice2() {
-    return _storyData.first.choice2;
+    return _storyData[_storynumber].choice2;
   }
 
-  void restart() {_storynumber = 0;}
+  void restart() {
+    _storynumber = 0;
+  }
 }
 //TODO: Step 7 - Uncomment the lines below to include storyData as a private property in StoryBrain. Hint: You might need to change something in story.dart to make this work.
 
