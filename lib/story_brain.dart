@@ -75,9 +75,9 @@ class StoryBrain {
   void restart() {
     _storynumber = 0;
   }
-  bool buttonShouldBeVisible()
-  {
-    if(_storynumber == 0 || _storynumber == 1 || _storynumber == 2)
+
+  bool buttonShouldBeVisible() {
+    if (_storynumber == 0 || _storynumber == 1 || _storynumber == 2)
       return true;
     else
       return false;
