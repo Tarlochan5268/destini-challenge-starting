@@ -75,6 +75,13 @@ class StoryBrain {
   void restart() {
     _storynumber = 0;
   }
+  bool buttonShouldBeVisible()
+  {
+    if(_storynumber == 0 || _storynumber == 1 || _storynumber == 2)
+      return true;
+    else
+      return false;
+  }
 }
 //TODO: Step 7 - Uncomment the lines below to include storyData as a private property in StoryBrain. Hint: You might need to change something in story.dart to make this work.
 
