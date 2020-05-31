@@ -2,6 +2,7 @@
 
 
 # Destini 🤔
+Completed the Challenge and made the Game
 
 ## Our Goal
 
